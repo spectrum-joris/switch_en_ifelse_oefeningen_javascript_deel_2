@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oefening 6 — Emoji‑kaartje configurator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Emoji‑kaartje configurator</h1>
+  <label for="emoji">Emoji:</label>
+  <select id="emoji">
+    <option>😀</option><option>😎</option><option>🚴</option><option>🎵</option><option>📷</option>
+    <option>🏕️</option><option>🍕</option><option>🐶</option><option>❤️</option><option>⚡</option>
+  </select>
+  <label for="bg">Achtergrond:</label>
+  <select id="bg">
+    <option>white</option><option>lightgray</option><option>lightblue</option>
+    <option>lightgreen</option><option>pink</option><option>black</option>
+  </select>
+  <label for="size">Grootte (px):</label>
+  <select id="size">
+    <option>24</option><option>36</option><option selected>48</option><option>72</option>
+  </select>
+  <button id="reset">Reset</button>
+  <div id="card">
+    <span id="sym">😀</span>
+    <span id="subtext">Mijn emoji</span>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

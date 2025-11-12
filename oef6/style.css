@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; margin: 20px; }
+#card {
+  width: 260px;
+  height: 260px;
+  border: 1px solid #ddd;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+  background-color: white;
+}

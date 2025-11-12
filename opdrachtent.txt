@@ -1,0 +1,45 @@
+JS Oefeningen — if/else-if en switch (ES6, front‑end)
+Algemene richtlijnen:
+• Gebruik HTML/CSS/JavaScript in één map. 
+• Schrijf moderne ES6+ code (const/let, arrow functions, template literals).
+• Geef elke oefening zijn eigen index.html en script.js (of gebruik één html met verschillende secties).
+• Lees de opdrachttekst aandachtig.
+
+Oefening 1 — Ticketprijs berekenen (if/else‑if)
+Vraag met prompt() naar de leeftijd van de bezoeker en bereken de ticketprijs volgens onderstaande regels:
+• < 6 jaar: gratis • 6–17 jaar: €6 • 18–64 jaar: €12 • 65+: €8.
+Toon het resultaat met console.log en ook in de pagina in een <p> element dat je via JS aanmaakt.
+Bonus: valideer dat de invoer een getal is met “Number.isFinite()”; toon anders een foutmelding.
+
+Oefening 2 — BMI‑categorie (if/else‑if)
+Maak een klein formulier met twee <input type="number"> velden: gewicht (kg) en lengte (m).
+Bij klik op “Bereken” toon je BMI = gewicht / (lengte^2) en de categorie:
+Ondergewicht < 18.5, Normaal 18.5–24.9, Overgewicht 25–29.9, Obesitas ≥ 30.
+Gebruik if/else‑if, werk met template literals, en voorkom herladen van de pagina (event.preventDefault()).
+
+Oefening 3 — Kleur naar DIV (if/else‑if + DOM)
+Maak een inputveld waar de gebruiker een kleurnaam of hexcode typt (bv. 'tomato' of '#ff9900') en een knop “Toepassen”.
+Wanneer je klikt:
+• Als de invoer een bekende kleurnaam is (bv. 'red', 'green', 'blue', 'tomato', 'gold'), zet je de achtergrondkleur van een <div id="preview"> naar die kleur.
+• Als de invoer een geldige hexkleur is (#rrggbb of #rgb), gebruik die. Testen op een hexkleur doe je met de regel if (/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(value))
+• Anders toon je een foutmelding en reset je de div naar wit.
+Gebruik vooral JS (geen externe libs), en style de preview‑div 200×200px met een subtiele border.
+
+Oefening 4 — Dagtype (switch)
+Vraag met prompt() naar een dag van de week (bv. 'maandag'). Gebruik een switch om te bepalen:
+• Maandag t/m vrijdag ⇒ 'Werkdag' • Zaterdag/Zondag ⇒ 'Weekend' • Onbekend ⇒ 'Onbekende dag'.
+Normaliseer de invoer (lowercase en trim) en toon het resultaat in de pagina.
+
+Oefening 5 — Fruitprijzen (switch met meerdere cases)
+Maak een input + knop. Gebruiker typt een fruitsoort ('appels', 'bananen', 'papaja', 'kersen', 'mango').
+Gebruik switch met meerdere case‑labels die naar dezelfde code vallen (bv. 'appels'/'apples').
+Toon de prijs per stuk of per pond in een <p> (kies zelf prijzen). Onbekend ⇒ nette boodschap.
+
+Oefening 6 — Emoji‑kaartje configurator (switch + dropdowns)
+Bouw een kleine configurator met:
+• Een dropdown met een lijst emojis (😀, 😎, 🚴, 🎵, 📷, 🏕️, 🍕, 🐶, ❤️, ⚡).
+• Een dropdown voor achtergrondkleur (white, lightgray, lightblue, lightgreen, pink, black).
+• Een dropdown voor tekstgrootte (24, 36, 48, 72).
+Gebruik een switch om per kleur extra logica te doen (bv. 'black' ⇒ tekst wit maken).
+Toon de emoji in een <div id="card"> (min. 240×240px, gecentreerd). Wijzig live bij elke wijziging (change‑events).
+Bonus: voeg een 'Reset' knop toe die alles terugzet.

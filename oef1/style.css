@@ -1,0 +1,22 @@
+/* variabelen */
+:root {
+    --margin: 1.4rem;
+}
+
+body { 
+    font-family: Arial, 
+    sans-serif; 
+    margin: var(--margin);
+}
+
+#out { 
+    margin-top: var(--margin);
+    padding: var(--margin);
+    background-color: rgb(215, 215, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18.2rem;
+    height: 5rem;
+    text-align: center;
+}

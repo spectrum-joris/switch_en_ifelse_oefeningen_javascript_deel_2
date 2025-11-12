@@ -1,0 +1,20 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+}
+
+#preview {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #999;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+#message { 
+    color: red; 
+    font-weight: bold; 
+}
